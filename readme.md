@@ -38,4 +38,18 @@ ls -la
 |Столбец 1    | Столбец 2    | Столбец 3|  
 |-------------|--------------|----------|
 |text 1       | text 2       | text 3   |
-|text 4       | text 5       | text 6   |
+|text 4       | text 5       | text 6   |  
+
+
+
+HEAD -- это голова.  
+Коммит -- это комментарий к обновленным файлам.  
+Статусы файлов:  
+
+```mermaid  
+graph LR;
+untracked --"git add"--> staged;
+modified --"git add"--> staged;
+staged --"git commit"--> tracked/commited; 
+```  
+
